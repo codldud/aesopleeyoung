@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Guide</title>
+</head>
+
+<style>
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 200;
+	font-display: swap;
+	src: local('Pretendard ExtraLight'), url('./woff2/Pretendard-ExtraLight.woff2') format('woff2'), url('./woff/Pretendard-ExtraLight.woff') format('woff');
+}
+
+*{
+        margin-left: 0px;
+        margin-right: 0px;
+        font-family: 'Pretendard';
+  }
+
+  .body{
+    color: #F4F1EC;
+  }
+
+.menu{
+    display: flex;
+    justify-content: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.box{
+    box-sizing: border-box;
+    background-color: #483C2F;
+    height: 1px;
+    margin-top:  10px;
+}
+
+.logo{
+    margin-top: 17px;
+}
+
+.list-icon{
+    margin-left: 20px;
+    margin-right: 120px;
+    margin-top: 20px;
+}
+
+.menu-icon{
+    display: flex;
+    gap: 15px;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+/* 메인단락 */
+.first{
+    display: flex;
+    justify-content: center;
+    color: #483C2F;
+}
+
+.first h1{
+    margin-top: 20px;
+    font-size: 23px;
+}
+.first img{
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 20px;
+}
+
+/* 제품 시작 */
+
+.product{
+    text-align: center;
+    color: #483C2F;
+    margin-top: 60px;
+}
+
+.product1{
+    text-align: center;
+    color: #483C2F;
+    margin-top: 20px;
+}
+
+.product1 {
+    overflow: hidden; 
+}
+
+.product1 img{
+    transition: all 0.2s linear;
+    max-height: 100%;
+    
+}
+
+.product1:hover img {
+  transform: scale(1.1);
+}
+
+.product2 {
+    overflow: hidden; 
+}
+
+.product2 img{
+    transition: all 0.2s linear;
+    max-height: 100%;
+    
+}
+
+.product2:hover img {
+  transform: scale(1.1);
+}
+
+.product {
+    overflow: hidden; 
+}
+
+.product img{
+    transition: all 0.2s linear;
+    max-height: 100%;
+    
+}
+
+.product:hover img {
+  transform: scale(1.1);
+}
+
+
+
+
+.product2{
+    padding-bottom: 60px;
+}
+
+.product3{
+    display: none;
+}
+
+.product img{
+    margin-top: 40px;
+}
+
+.product a{
+    text-decoration: none;
+    color: #483C2F;
+}
+
+.product1 a{
+    text-decoration: none;
+    color: #483C2F;
+}
+
+.product2 a{
+    text-decoration: none;
+    color: #483C2F;
+}
+
+
+.product h1{
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.product1 h1{
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.product p{
+    color: #5F5850;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.product1 p{
+    color: #5F5850;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+
+.price{
+  position: relative;
+  font-size: 18px;
+}
+.price:after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 0px;
+  height: 2px;
+  margin: 5px 0 0;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.3s;
+  opacity: 0;
+  background-color: #483C2F;
+}
+.price:hover:after{
+  width: 100%;
+  opacity: 1;
+}
+
+/* 푸터시작 */
+.footer{
+    background-color: #483C2F;
+    padding-top: 24px;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
+
+.footer img{
+    background-color: transparent !important;
+}
+.footer a{
+    background-color: transparent !important;
+}
+.footer p{
+    background-color: transparent !important;
+}
+
+.big{
+    display: none;
+}
+
+.footerimg{
+    display: none;
+}
+@media(min-width: 800px){
+    .box{
+   display: none;
+}
+
+.big{
+    display: block;
+}
+
+.list-icon{
+    margin-right: 500px;
+}
+
+.menu-icon{
+    gap: 25px;
+    margin-left: 460px;
+}
+
+
+/* 첫번쨰 텍스트 */
+.first{
+    display: none;
+}
+
+.all-products{
+    display: none;
+}
+
+/* 카트추가 */
+.cart{
+    box-sizing: border-box;
+    border: solid 1px #483C2F;
+    border-radius: 50px;
+    width: 150px;
+    padding: 10px 5px ;
+    text-align: center;
+    margin-top: 30px;
+    transition: all 0.4s;
+}
+
+.big-text{
+    margin-left: 520px;
+    margin-top: 120px;
+    color: #483C2F;
+}
+
+.big-text h1{
+    font-size: 60px;
+    margin-bottom: 0px;
+}
+
+/* 제품 시작 */
+.cart a{
+    background-color: transparent !important;
+    text-decoration: none;
+    color: #483C2F;
+    font-size: 18px;
+}
+.cart a :hover{
+    text-decoration: none;
+    color: #F4F1EC;
+    background-color: #483C2F;
+}
+
+.cart:focus {
+    outline: none;
+}
+
+.cart:hover {
+    background-color: #483C2F;
+    color: #F4F1EC;
+}
+
+.cart a:hover {
+    color: #F4F1EC;
+}
+
+.first-product {
+    overflow: hidden; 
+}
+
+.first-product img{
+    transition: all 0.2s linear;
+    max-height: 100%;
+    
+}
+
+.first-product:hover img {
+  transform: scale(1.05);
+}
+
+
+.first-text{
+    margin-bottom: 100px;
+}
+.first-text a{
+    text-decoration: none;
+    color: #483C2F;
+}
+.first-text h1{
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+.first-text p{
+    color: #5F5850;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+
+.big-products {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 1000px;
+    gap: 20px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+ 
+/* 두번째 */
+.second-product{
+    margin-bottom: 200px;
+}
+
+.gift-first{
+    display: flex;
+    justify-content: center;
+    margin-left: 60px;
+    margin-right: 200px;
+}
+
+.gift-second{
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 60px;
+    
+}
+
+.big-second-text{
+    text-align: center;
+    margin-top: 200px;
+    padding-left: 240px;
+}
+
+.big-second2-text{
+    text-align: center;
+    margin-top: 200px;
+    padding-right: 240px;
+}
+
+
+
+/* 카트추가 */
+.cart1{
+    box-sizing: border-box;
+    border: solid 1px #483C2F;
+    border-radius: 50px;
+    width: 150px;
+    padding: 10px 5px ;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    transition: all 0.4s;
+}
+
+.cart1 a{
+    background-color: transparent !important;
+    text-decoration: none;
+    color: #483C2F;
+    font-size: 18px;
+}
+.cart1 a :hover{
+    text-decoration: none;
+    color: #F4F1EC;
+    background-color: #483C2F;
+}
+
+.cart1:focus {
+    outline: none;
+}
+
+.cart1:hover {
+    background-color: #483C2F;
+    color: #F4F1EC;
+}
+
+.cart1 a:hover {
+    color: #F4F1EC;
+}
+
+
+.footer{
+    display: none;
+}
+
+.footerimg{
+    display: flex;
+    justify-content: center;
+    background-color: #483C2F;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    gap: 380px;
+}
+
+
+}
+
+</style>
+<body>
+     <header>
+        <div class="img">
+            <div class="menu">
+            <div class="list-icon"><a href="#"><img src="https://i.postimg.cc/3Ncj3cvL/image.png" alt=""  width="24" ></a></div>
+    
+            <div class="logo"><a href="index.html"><img src="https://i.postimg.cc/ZqSwSsBx/Group1.png" alt="logo" width="100"></a></div>
+    
+            <div class="menu-icon">
+                <a href="#"><img src="https://i.postimg.cc/SsZdcyZg/Group.png" alt=""  width="24"></a>
+                <a href="#"><img src="https://i.postimg.cc/Y2s89CL9/Group-9.png" alt=""   width="20"></a>
+                <a href="#"><img src="https://i.postimg.cc/nL2GtFtn/Group.png" alt=""  width="24"></a>        
+            </div>
+            </div>
+    
+            <div class="box"></div>
+        </header>
+
+        <!-- 메인단락 -->
+        <div class="first">
+            <h1>All products</h1>
+            <a href="#"><img src="https://i.postimg.cc/T16Y38bQ/Frame.png" alt=""></a>
+            </div>
+ 
+        <!-- 제품시작 -->
+        <div class="all-products">
+        <div class="product1">
+            <a href="product.html"><img src="https://i.postimg.cc/fRbj5pPV/image-43.png" alt="" width="100%"></a>
+            <a href="product.html"><h1>튠풀 텍스쳐</h1></a>
+            <p>시트러스를 함유한 제품 3종</p>
+            <a href="product.html"><span class="price">₩99000</span></a>
+         </div>
+
+         <div class="product">
+            <a href="product.html"><img src="https://i.postimg.cc/XY7SLN39/image-44.png" alt="" width="100%"></a>
+            <a href="product.html"><h1>하트풀 하모니</h1></a>
+            <p>홈 케어를 위한 아로마 필수품 3종</p>
+            <a href="product.html"><span class="price">₩115,000</span></a>
+         </div>
+
+         <div class="product">
+            <a href="product.html"><img src="https://i.postimg.cc/nzxyPqQS/image-45.png" alt="" width="100%"></a> 
+            <a href="product.html"><h1>마제스틱 멜로디</h1></a>
+            <p>핸드 및 바디 케어 필수품 4종</p>
+            <a href="product.html"><span class="price">₩133,000</span></a>
+         </div>
+
+         <div class="product">
+            <a href="product.html"><img src="https://i.postimg.cc/9QW1K1x7/image-46.png" alt="" width="100%"></a>
+            <a href="product.html"><h1>페뷸러스 폼</h1></a>
+            <p>데일리 필수품 3종</p>
+            <a href="product.html"><span class="price">₩71,000</span></a>
+         </div>
+         
+         <div class="product">
+            <a href="product.html"><img src="https://i.postimg.cc/s2mm3WNN/image-48.png" alt="" width="100%"></a>
+            <a href="product.html"><h1>라우징 리듬</h1></a>
+            <p>활기찬 바디 케어 3종</p>
+            <div class="product2"><a href="product.html"><span class="price">₩95,000</span></a></div>
+         </div>
+
+         <div class="product3">
+            <a href="product.html"><img src="https://www.aesop.com/u1nb1km7t5q7/6pGm76R9uB0Vyep2k6Oxyp/1271fbc2ceaee348617c54c017c7b65d/Aesop_Resurrection_Aromatique_Hand_Balm_Web_PDP_Secondary_50-50_Desktop_1440x1500px.jpg" alt="" width="100%"></a>
+            <a href="product.html"><h1>라우징 리듬</h1></a>
+            <p>활기찬 바디 케어 3종</p>
+            <div class="product2"><a href="product.html"><span class="price">₩95,000</span></a></div>
+         </div></div>
+
+         <!-- 큰페이지 화면 -->
+
+         <div class="big">
+            <div class="big-text">
+                <h1>Gift Guide</h1>
+                <p>함께 사용하면 좋은 제품의 컬렉션과 휴대용 필수품은 여행 또는 선물용으로 이상적입니다.</p>
+                <div class="cart"><a href="#">All products</a></div>
+            </div>
+
+            <div class="big-products">
+                <div class="first-product">
+                   <a href="product.html"><img src="https://i.postimg.cc/XYBMpTxp/Frame-3.png" alt=""></a> 
+                   <div class="first-text"><a href="product.html"><h1>라우징 리듬</h1></a>
+                   <p>활기찬 제라늄 리프 바디 케어 제품 3종</p>
+                   <a href="product.html"><span class="price">₩230,000</span></a></div>
+                </div>
+
+                <div class="first-product">
+                    <a href="product.html"><img src="https://i.postimg.cc/htQ96r4k/Frame-4.png" alt=""></a> 
+                    <div class="first-text"><a href="product.html"><h1>페뷸러스 폼</h1></a>
+                    <p>재충전을 위한 핸드, 바디, 립 제품 3종</p>
+                    <a href="product.html"><span class="price">₩230,000</span></a></div>
+                 </div>
+
+                 <div class="first-product">
+                    <a href="product.html"><img src="https://i.postimg.cc/mkr9w366/Frame-5.png" alt=""></a> 
+                    <div class="first-text"><a href="product.html"><h1>하트풀 하모니</h1></a>
+                    <p>따뜻한 환대를 위한 홈 케어 제품 3종</p>
+                    <a href="product.html"><span class="price">₩230,000</span></a></div>
+                 </div>
+
+                 <div class="first-product">
+                    <a href="product.html"><img src="https://i.postimg.cc/15f6VHF8/Frame-6.png" alt=""></a> 
+                    <div class="first-text"><a href="product.html"><h1>튠풀 텍스처</h1></a>
+                    <p>피부를 상쾌하게 세정하고 수분을 공급하는 <br>
+                        오랜 사랑을 받는 제품 3종</p>
+                    <a href="product.html"><span class="price">₩230,000</span></a></div>
+                 </div>
+                 
+                 <div class="first-product">
+                    <a href="product.html"><img src="https://i.postimg.cc/qMSKs3cj/Frame-7.png" alt=""></a> 
+                    <div class="first-text"><a href="product.html"><h1>마제스틱 멜로디</h1></a>
+                    <p>사랑받는 핸드 및 바디 케어 필수품 4종</p>
+                    <a href="product.html"><span class="price">₩230,000</span></a></div>
+                 </div>
+                 
+                 <div class="first-product">
+                    <a href="product.html"><img src="https://i.postimg.cc/k5FtPY0p/Frame-8.png" alt=""></a> 
+                    <div class="first-text"><a href="product.html"><h1>레저렉션 듀엣</h1></a>
+                    <p>시트러스, 우디, 허브 아로마가 어우러진 <br>
+                        탁월한 핸드 케어 2종</p>
+                    <a href="product.html"><span class="price">₩230,000</span></a></div>
+                 </div>
+            </div>
+
+            <div class="second-product">
+                <div class="gift-first">
+                    <img src="https://i.postimg.cc/vTNpHsg8/Rectangle-65.png" alt="">
+                <div class="big-second-text">
+                    <h1>기프트 파인더</h1>
+                    <div class="cart1"><a href="#">상품 더보기</a></div>
+                </div></div>
+    
+                <div class="gift-second">
+                <div class="big-second2-text">
+                    <h1>트래블 사이즈 필수품</h1>
+                    <p>휴대하기 간편한 크기로 여행의 경험을 <br> 풍성하게 해주는 제품들을 만나보세요.</p>
+                    <div class="cart1"><a href="#">상품 더보기</a></div></div>
+                    <img src="https://i.postimg.cc/KY2CYQzT/Frame-2.png" alt="">
+                </div>            
+             </div>
+            </div>
+
+            <div class="footerimg"><img src="https://i.postimg.cc/Jh4W0kJ4/Frame-41.png" alt="" width="568px" height="254px" ><img src="https://i.postimg.cc/TYMMmSms/Frame-42.png" alt="" width="600"></div>
+
+         </div>
+
+        
+
+         <div class="footer">
+            <a href="#"><img src="https://i.postimg.cc/4xpfmjY7/Frame-37.png" alt="logo" width="300"> </a> 
+           <a href="#"><img src="https://i.postimg.cc/NjhFKJV2/Group-20.png" alt="" width="400" style="margin-top: 25px;"></a>
+            <p style="font-size: 8px; margin-top: 40px; margin-right: 120px;">상호: 이솝코리아 유한회사 | 주소: 서울특별시 강남구 도산대로45길 10-6 이솝코리아 | 대표자: 프레데리크미셸어완세일러 | 대표전화: 1800-1987 | 대표 이메일: aesop@aesop.com | 호스팅 사업자: SAP Hybris | 사업자 등록 번호: 220-88-5601</p>
+    
+
+</body>
+</html>

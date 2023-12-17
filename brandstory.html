@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brandstory</title>
+    <link rel="stylesheet" href="css/my_mouseover.css" />
+</head>
+
+<style>
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 200;
+	font-display: swap;
+	src: local('Pretendard ExtraLight'), url('./woff2/Pretendard-ExtraLight.woff2') format('woff2'), url('./woff/Pretendard-ExtraLight.woff') format('woff');
+}
+
+*{
+        margin-left: 0px;
+        margin-right: 0px;
+        font-family: 'Pretendard';
+  }
+
+.img{
+    width: 100%;
+            height: 500px;
+            background-image: url(https://i.postimg.cc/ryR60nMT/Frame-34.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+}
+
+.box{
+    box-sizing: border-box;
+    background-color: #483C2F;
+    height: 1px;
+    margin-top:  10px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.logo{
+    margin-top: 35px;
+}
+
+.list-icon{
+    margin-left: 20px;
+    margin-right: 120px;
+    margin-top: 35px;
+}
+
+
+.menu-icon{
+    display: flex;
+    gap: 15px;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-top: 35px;
+}
+
+
+.head-text{
+    color: #fff;
+    margin-top: 275px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.head-text h1{
+    margin-bottom: 0px;
+    font-size: 45px;
+}
+
+.head-text p{
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.a-icon {
+        margin: 0px auto;
+        position: relative
+      }
+      .b-icon {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: none;
+        opacity: 0;
+        transition: opacity 0.5s ;
+      }
+      .c-icon{
+        display: block;
+        
+              }
+
+      .a-icon:hover .b-icon {
+        display: block;
+        opacity: 1;
+      }
+
+      .a1-icon {
+        margin: 0px auto;
+        position: relative
+      }
+      .b1-icon {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: none;
+        opacity: 0;
+        transition: opacity 0.5s ;
+      }
+      .c1-icon{
+        display: block;
+        
+              }
+
+      .a1-icon:hover .b1-icon {
+        display: block;
+        opacity: 1;
+      }
+
+
+
+/* 메인 내용 시작 */
+.second-Conten{
+    background-color: #F4F1EC;
+    text-align: center;
+    color: #483C2F;
+}
+
+.maintext h1{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 60px;
+}
+
+.maintext p{
+ margin-top: 10px;
+ }
+
+ /* 첫번째단락 */
+.first{
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;}
+
+.first img{
+    width: 400px;
+}
+
+.first h1{
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+
+.first p{
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+/* 두번째 */
+.second{
+    margin-top: 120px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 60px;
+}
+
+.second img{
+    margin-top: 5px;
+}
+
+
+.second-img2{
+    display: none;
+}
+
+.second h1{
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+
+.second p{
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+/* 푸터시작 */
+.footer{
+    background-color: #483C2F;
+    padding-top: 24px;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
+
+.footerimg{
+    display: none;
+}
+
+
+@media(min-width: 800px){
+    .img{
+        height: 800px;
+        background-image: url(https://i.postimg.cc/9Qmx3htc/Frame-35.png);
+}
+
+.box{
+   display: none;
+}
+
+.menu{
+    margin-left: 125px;
+    margin-right: 125px;
+}
+
+.list-icon{
+    margin-right: 500px;
+}
+
+
+.menu-icon{
+    gap: 25px;
+    margin-left: 460px;
+}
+
+
+
+
+.head-text{
+    margin-top: 500px;
+    margin-left: 350px;
+}
+
+.head-text h1{
+    font-size: 60px;
+}
+
+.head-text p{
+    margin-top: 10px;
+    font-size: 18px;
+    margin-right: 1180px;
+}
+
+/* 메인 내용 시작 */
+.maintext h1{
+    padding-top: 130px;
+    font-size: 65px;
+}
+
+.maintext p{
+ margin-top: 15px;
+ margin-bottom: 0px;
+ }
+
+  /* 첫번째단락 */
+.first{
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;}
+
+.first img{
+    content: url(https://i.postimg.cc/fL43SYK5/Rectangle-64.png);
+    width: 1200px;
+    margin-top: 150px;
+}
+
+.first h1{
+    text-align: left;
+    font-size: 30px;
+    margin-left: 343px;
+    margin-right: 640px;
+}
+
+.first p{
+    text-align: left;
+    font-size: 18px;
+    margin-left: 343px;
+    margin-right: 440px;
+}
+
+/* 두번째 */
+.second{
+    padding-bottom: 120px;
+}
+
+.second-img{
+    display: none;
+    margin-bottom: 0px;
+}
+
+.second-img2{
+    box-sizing: border-box;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.img2{
+    text-align: start;
+}
+
+.second-img2{
+    display: flex;
+}
+
+.second h1{
+    text-align: left;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-left: 343px;
+    margin-right: 660px;
+}
+
+.second p{
+    text-align: left;
+    font-size: 18px;
+    margin-left: 343px;
+    margin-right: 440px;
+}
+
+/* 푸터시작 */
+.footer{
+    display: none;
+    /* padding-left: 50px;
+    padding-right: 20px;
+    padding-bottom: 15px; */
+}
+
+.footerimg{
+    display: flex;
+    justify-content: center;
+    background-color: #483C2F;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    gap: 380px;
+}
+
+
+}
+
+</style>
+
+<body>
+    <header>
+        <header>
+        
+            <div class="img">
+                <div class="menu">
+                <div class="list-icon">
+                    <div class="a-icon">
+                        <div class="c-icon"><a href="#"><img src="https://i.postimg.cc/nLNMJc6h/Group-65.png" alt=""  width="26"></a></div>
+                        <div class="b-icon"><a href="#"><img src="https://i.postimg.cc/9MjVb46Z/Group-66.png" alt=""  width="26"></a></div>
+                       </div>
+                    </div>
+        
+                <div class="logo"><a href="index.html"><img src="https://i.postimg.cc/ZqSwSsBx/Group1.png" alt="logo" width="100"></a></div>
+        
+                <div class="menu-icon">
+                   <div class="a-icon">
+                     <div class="c-icon"><a href="#"><img src="https://i.postimg.cc/SsZdcyZg/Group.png" alt=""  width="26"></a></div>
+                     <div class="b-icon"><a href="#"><img src="https://i.postimg.cc/dtQqyYBt/d.png" alt=""  width="26"></a></div>
+                    </div>
+    
+                    <div class="a1-icon">
+                        <div class="c1-icon"><a href="#"><img src="https://i.postimg.cc/44VK5sV6/Group-9-n.png" alt=""  width="22"></a></div>
+                        <div class="b1-icon"><a href="#"><img src="https://i.postimg.cc/QxzqTX3p/Group-9-nd.png" alt=""  width="22"></a></div>
+                       </div>
+       
+    
+                       <div class="a-icon">
+                        <div class="c-icon"><a href="#"><img src="https://i.postimg.cc/yxkZ1ZW2/Group-1-n.png" alt=""  width="26"></a></div>
+                        <div class="b-icon"><a href="#"><img src="https://i.postimg.cc/zv8qpZY7/Group-1-nd.png" alt=""  width="26"></a></div>
+                       </div>
+                </div>
+                </div>
+        
+                <div class="box"></div>
+    
+            <div class="head-text">
+            <h1>Brand story</h1>
+            <p>이솝은 세심하게 고안되어 효과적이면서도, 감각적인 즐거움을 선사하는 스킨, 헤어, 바디 케어 제품을 제공합니다.</p>
+            </div>
+        </div>
+        </header>
+
+    <!-- 메인내용시작 -->
+    <div class="second-Conten">
+        <div class="one"></div>
+        <div class="maintext">
+        <h1>‘If the path be beautiful, <br>
+            let us not ask where it <br>
+            leads.’</h1>
+            <p>Anatole France</p>
+        </div>
+
+        <!-- 첫번째단락 -->
+        <div class="first">
+            <img src="https://i.postimg.cc/PqNvnp8d/Rectangle-64.png" alt="">
+            <h1>이솝은 1987년에 설립되었고 멜버른에 본사를 두고 있으며 세계 다수 지역에 사무실과 스토어를 보유하고 있습니다.</h1>
+            <p>우수한 품질의 스킨, 헤어 그리고 바디 케어 제품을 만들어 내는 것이 변함없는 이솝의 목표입니다.
+                우리는 식물성 재료와 연구실에서 제조된 성분들을 공급하기 위해 폭넓은 조사를 하며, 반드시 효능과 안전성이 입증된 성분만을 사용합니다.
+                전문적인 지식을 가진 컨설턴트들은 각각 독특한 개성을 지닌 이솝 스토어에서 제품 레인지를 소개하고 적합한 제품 선택에 도움을 드립니다.</p>
+        </div>
+
+        <!-- 두번째 -->
+        <div class="second">
+            <div class="second-img">
+            <img src="https://i.postimg.cc/pr0YBNwZ/Rectangle-65.png" alt="">
+            <img src="https://i.postimg.cc/V6gjYQk8/Rectangle-66.png" alt="">
+            <img src="https://i.postimg.cc/t46WsV4D/Rectangle-67.png" alt="">
+        </div>
+
+        <div class="second-img2">
+            <img src="https://i.postimg.cc/fy8hx7db/Rectangle-65.png" alt="" width="600px" height="570px">
+            <div class="img2"><img src="https://i.postimg.cc/GhpRbN0T/Rectangle-66.png" alt="" width="580px"> <br> <img src="https://i.postimg.cc/Hkq14krb/Rectangle-67.png" alt="" width="260px" style="margin-top: 10px;"></div> </div>
+            <h1>이솝은 지적이고 지속 가능한 디자인에 대하여 진정성 있는 관심을 가지고 있으며, 이는 이솝의 모든 분야로 이어집니다.</h1>
+            <p>새로운 스토어의 장소를 찾을 때 지역과 어울리지 않는 공간이 되기보다는, 그 지역의 거리 속 한 구성원으로 조화롭게 가치를 더하는 것이 이솝의 진정한 의의입니다.</p>
+            <p>이솝은 2003년 멜버른 베이사이드 교외의 세인트 킬다의 작은 지하 코너에 위치한 스토어에서 첫 고객을 맞이했습니다. 이곳은 지하 주차장으로 이어지는 좁은 비탈길에 위치한 작은 스토어였지만, 현재는 이솝 건축과 디자인의 기준점이 되었습니다. 이솝은 새로운 스토어의 장소를 찾을 때 이미 존재하는 것을 어떻게 활용하고 협력할 것인지 가장 먼저 염두에 둡니다. 장소의 과거와 현재 그리고 미래를 고려하며 조심스럽게 스토어 오픈을 계획합니다.</p>
+        </div>
+    </div>
+
+    
+
+    <!-- 푸터시작 -->
+    <div class="footer">
+        <img src="https://i.postimg.cc/4xpfmjY7/Frame-37.png" alt="logo" width="300">
+       <a href="#"><img src="https://i.postimg.cc/NjhFKJV2/Group-20.png" alt="" width="400" style="margin-top: 25px;"></a>
+        <p style="font-size: 8px; margin-top: 40px; margin-right: 120px;">상호: 이솝코리아 유한회사 | 주소: 서울특별시 강남구 도산대로45길 10-6 이솝코리아 | 대표자: 프레데리크미셸어완세일러 | 대표전화: 1800-1987 | 대표 이메일: aesop@aesop.com | 호스팅 사업자: SAP Hybris | 사업자 등록 번호: 220-88-5601</p>
+    </div>
+
+    <div class="footerimg"><img src="https://i.postimg.cc/Jh4W0kJ4/Frame-41.png" alt="" width="568px" height="254px" ><img src="https://i.postimg.cc/TYMMmSms/Frame-42.png" alt="" width="600"></div>
+</body>
+</html>
